@@ -1,7 +1,7 @@
 # Multi-label_text_classification
 开课吧&amp;后厂理工学院 百度NLP项目2：百度试题数据集多标签文本分类
 
-# 1.数据说明
+# 数据说明
 原始数据集为`高中`下`地理`,`历史`,`生物`,`政治`四门学科数据，每个学科下各包含第一层知识点，如`历史`下分为`近代史`,`现代史`,`古代史`。  
 原始数据示例： 
 
@@ -16,17 +16,18 @@
 - 仅保留题目作为数据特征，删除[题型]及[答案解析]
 
 
-# 2.4层标签数据集
+# 4层标签数据集
 ## 模型
 1. fasttest
 2. textcnn
 3. gcn  
   [GCN with Multi Labels](https://github.com/nocater/text_gcn)  
-  [GCN_AAAI2019](https://github.com/yao8839836/text_gcn/) 
+  [GCN_AAAI2019](https://github.com/yao8839836/text_gcn/)  
+  > ps: 4x2080Ti 显存不足以支持`tf.sparse_tensor_dense_matmul(x, y)`[layer.py line 33] 使用CPU训练即可
 4. bert
 5. xlnet(doing)
 
-# 3.实验结果
+# 实验结果
 |数据集|模型|类别|Acc|Micro-F1|Macro-F1|备注|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |Baidu|FastText|95|-|0.421|0.234|epoch 1000, ngram 5, dim 50|
