@@ -35,3 +35,21 @@
 |Baidu|GCN|95|-|0.8755|0.6914|gcn|
 |Baidu|BERT|21|0.7958|0.941|0.163|BERT 3 layers labels result|
 |Baidu|BERT|95|0.5788|0.917|0.781|only BERT|
+
+
+# 学员成果展示
+## 学员优秀作业一：
+学员：张*宁同学
+
+推荐理由：项目代码完整，笔记清晰有调理
+
+地址：https://github.com/Light2077/Text-Classification
+
+## 学员优秀作业二：
+学员：邓*勇同学
+
+推荐理由：项目代码结构清晰，完整，使用tensorflow-serving+nvidia-docker+grpc部署roberta模型
+
+地址：https://github.com/DengYangyong/exam_annotation 
+
+这个学员有自己的公众号，写的非常棒，地址：https://mp.weixin.qq.com/s/PgC7lZxikKyGMlMNpnOLLA
